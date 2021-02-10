@@ -120,7 +120,7 @@ trait Exportable
         $writer->close();
     }
 
-    private function writeRowsFromCollection($writer, Collection $collection, ?callable $callback = null)
+    private function writeRowsFromCollection($writer, Collection $collection, callable $callback = null)
     {
         // Apply callback
         if ($callback) {
@@ -142,7 +142,7 @@ trait Exportable
         }
     }
 
-    private function writeRowsFromGenerator($writer, Generator $generator, ?callable $callback = null)
+    private function writeRowsFromGenerator($writer, Generator $generator, callable $callback = null)
     {
         foreach ($generator as $key => $item) {
             // Apply callback
@@ -166,7 +166,7 @@ trait Exportable
         }
     }
 
-    private function writeRowsFromArray($writer, array $array, ?callable $callback = null)
+    private function writeRowsFromArray($writer, array $array, callable $callback = null)
     {
         $collection = collect($array);
 
