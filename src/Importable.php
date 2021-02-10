@@ -54,7 +54,7 @@ trait Importable
         }
         $reader->close();
 
-        return collect($collection ?? []);
+        return collect($collection != null ? $collection : []);
     }
 
     /**
