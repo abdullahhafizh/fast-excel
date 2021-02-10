@@ -12,8 +12,8 @@ use Illuminate\Support\Facades\Facade;
  * @method static string export($path, callable $callback = null)
  * @method static \Illuminate\Support\Collection importSheets($path, callable $callback = null)
  * @method static \AbdullahHafizh\FastExcel\FastExcel configureCsv($delimiter = ',', $enclosure = '"', $eol = "\n", $encoding = 'UTF-8', $bom = false)
- * @method static \AbdullahHafizh\FastExcel\FastExcel configureReaderUsing(?callable $callback = null)
- * @method static \AbdullahHafizh\FastExcel\FastExcel configureWriterUsing(?callable $callback = null)
+ * @method static \AbdullahHafizh\FastExcel\FastExcel configureReaderUsing(callable $callback = null)
+ * @method static \AbdullahHafizh\FastExcel\FastExcel configureWriterUsing(callable $callback = null)
  *
  * @see \AbdullahHafizh\FastExcel\FastExcel
  */

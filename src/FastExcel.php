@@ -133,7 +133,7 @@ class FastExcel
      *
      * @return $this
      */
-    public function configureReaderUsing(?callable $callback = null)
+    public function configureReaderUsing(callable $callback = null)
     {
         $this->reader_configurator = $callback;
 
@@ -147,7 +147,7 @@ class FastExcel
      *
      * @return $this
      */
-    public function configureWriterUsing(?callable $callback = null)
+    public function configureWriterUsing(callable $callback = null)
     {
         $this->writer_configurator = $callback;
 
