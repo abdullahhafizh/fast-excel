@@ -1,0 +1,38 @@
+{
+  "name": "abdullahhafizh/fast-excel",
+  "type": "library",
+  "keywords": ["laravel", "excel", "csv", "xls", "xlsx"],
+  "description": "Fast Excel import/export for Laravel",
+  "require": {
+    "php": "^5.1|^7.1|^8.0",
+    "illuminate/support": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0 || ^8.0",
+    "box/spout": "^2.7"
+  },
+  "require-dev": {
+    "illuminate/database": "^6.20.12 || ^7.30.4 || ^8.24.0",
+    "phpunit/phpunit": "^6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "AbdullahHafizh\\FastExcel\\": "src/"
+    },
+    "files": [
+      "src/functions/fastexcel.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AbdullahHafizh\\FastExcel\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+          "AbdullahHafizh\\FastExcel\\Providers\\FastExcelServiceProvider"
+      ]
+    }
+  },
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
